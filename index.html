@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mahni — Python-разработчик: парсинг, Excel, автоматизация, лендинги</title>
+  <meta name="description" content="Автоматизирую работу с данными на Python: парсинг сайтов и API, отчёты Excel, PostgreSQL. Делаю адаптивные лендинги на чистом коде.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="logo"><span>~/</span>mahni</a>
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#projects">Проекты</a>
+      <a href="#process">Как работаю</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a href="https://t.me/mahnli" class="btn btn--small header__cta" target="_blank" rel="noopener">Написать</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- Первый экран -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <p class="status"><i></i>Открыт для заказов</p>
+        <h1>Превращаю ручную рутину с&nbsp;данными <span class="grad">в одну кнопку</span></h1>
+        <p class="hero__lead">Python-разработчик. Собираю данные с сайтов и API, чищу их и отдаю готовыми отчётами в Excel или базе PostgreSQL. Делаю быстрые адаптивные лендинги на чистом коде.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn">Обсудить задачу</a>
+          <a href="#projects" class="btn btn--ghost">Смотреть проекты</a>
+        </div>
+      </div>
+      <div class="term" aria-label="Терминал">
+        <div class="term__bar"><i></i><i></i><i></i><span>mahni@dev: ~</span></div>
+        <pre class="term__body" id="term"></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="kicker">// услуги</p>
+      <h2 class="title">Чем могу помочь</h2>
+      <div class="services">
+        <article class="svc">
+          <div class="svc__icon">⛏️</div>
+          <h3>Парсинг сайтов и API</h3>
+          <p>Соберу товары, цены, вакансии или объявления в аккуратную таблицу: без дублей, с нормальными числами и датами.</p>
+          <span class="svc__price">от 1 000 ₽ · от 1 дня</span>
+        </article>
+        <article class="svc">
+          <div class="svc__icon">📊</div>
+          <h3>Отчёты Excel на Python</h3>
+          <p>Сведу десяток выгрузок в один отчёт со сводными листами и диаграммами. Запуск — двойным кликом.</p>
+          <span class="svc__price">от 1 000 ₽ · от 1 дня</span>
+        </article>
+        <article class="svc">
+          <div class="svc__icon">🗄️</div>
+          <h3>Базы данных и backend</h3>
+          <p>Спроектирую схему PostgreSQL, перенесу данные из Excel, сделаю API на FastAPI с авторизацией.</p>
+          <span class="svc__price">по задаче</span>
+        </article>
+        <article class="svc">
+          <div class="svc__icon">🌐</div>
+          <h3>Лендинги</h3>
+          <p>Продающие страницы без конструкторов: адаптив, калькуляторы, каталоги, формы заявок и публикация.</p>
+          <span class="svc__price">от 3 000 ₽ · от 3 дней</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Проекты -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="section__head">
+        <div><p class="kicker">// проекты</p><h2 class="title">Что уже сделано</h2></div>
+        <div class="chips" id="chips">
+          <button class="chip is-active" data-f="all">Все</button>
+          <button class="chip" data-f="python">Python</button>
+          <button class="chip" data-f="web">Лендинги</button>
+        </div>
+      </div>
+      <div class="projects" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Стек -->
+  <section class="section">
+    <div class="container stack">
+      <div>
+        <p class="kicker">// стек</p>
+        <h2 class="title">Инструменты</h2>
+        <p class="muted">Беру инструменты под задачу, а не задачу под инструменты. Код — с понятной структурой и инструкцией по запуску.</p>
+      </div>
+      <div class="stack__groups">
+        <div class="group"><b>Python</b><span>requests</span><span>openpyxl</span><span>FastAPI</span><span>SQLAlchemy</span><span>Pydantic</span></div>
+        <div class="group"><b>Данные</b><span>PostgreSQL</span><span>SQL</span><span>ETL</span><span>Excel</span><span>CSV / JSON</span></div>
+        <div class="group"><b>Веб</b><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Адаптив</span><span>GitHub Pages</span></div>
+        <div class="group"><b>Процесс</b><span>Git</span><span>GitHub</span><span>VS Code</span><span>draw.io</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Как работаю -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <p class="kicker">// процесс</p>
+      <h2 class="title">Как работаю</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Разбираюсь в задаче</h3><p>Задаю вопросы, смотрю примеры файлов или сайта. Если что-то невозможно — говорю сразу.</p></li>
+        <li><span>02</span><h3>Называю цену и срок</h3><p>Фиксирую их до начала работы. Никаких доплат в конце.</p></li>
+        <li><span>03</span><h3>Показываю промежуточный результат</h3><p>Чтобы правки попали в работу вовремя, а не после сдачи.</p></li>
+        <li><span>04</span><h3>Сдаю с инструкцией</h3><p>Как запустить и что поменять. Отвечаю на вопросы и после сдачи.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div>
+        <p class="kicker">// контакты</p>
+        <h2 class="title">Опишите задачу</h2>
+        <p class="muted">Отвечаю в течение дня. Работаю официально как самозанятый — с договором и чеком.</p>
+        <div class="links">
+          <a href="https://t.me/mahnli" target="_blank" rel="noopener" class="link"><b>Telegram</b><span>@mahnli</span></a>
+          <a href="mailto:gerasimog67@gmail.com" class="link"><b>Почта</b><span>gerasimog67@gmail.com</span></a>
+          <a href="https://github.com/mahn1" target="_blank" rel="noopener" class="link"><b>GitHub</b><span>mahn1</span></a>
+        </div>
+      </div>
+      <form class="form" id="form" novalidate>
+        <label>Что нужно сделать
+          <select name="type">
+            <option>Парсинг сайта или API</option>
+            <option>Отчёт Excel на Python</option>
+            <option>База данных / backend</option>
+            <option>Лендинг</option>
+            <option>Другое</option>
+          </select>
+        </label>
+        <label>Описание задачи<textarea name="task" rows="4" placeholder="Что собрать или автоматизировать, ссылки, сроки" required></textarea></label>
+        <label>Как с вами связаться<input name="contact" type="text" placeholder="@telegram или почта" required></label>
+        <button class="btn btn--full" type="submit">Отправить на почту</button>
+        <button class="btn btn--ghost btn--full" type="button" id="copy">Скопировать текст для Telegram</button>
+        <p class="form__note" id="form-note">Кнопка откроет ваш почтовый клиент с готовым письмом.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#" class="logo"><span>~/</span>mahni</a>
+    <p>Python · данные · веб</p>
+    <p>© <span id="year">2026</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
